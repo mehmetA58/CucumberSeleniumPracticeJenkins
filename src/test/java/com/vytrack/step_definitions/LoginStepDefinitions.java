@@ -17,7 +17,7 @@ public class LoginStepDefinitions {
 
     @Then("user verify that {string} page subtitle is displayed")
     public void user_verify_that_page_subtitle_is_displayed(String string) {
-        System.out.println("page subtitle is displayed");
+        System.out.println("Verifying page subtitle is :"+string);
 
     }
 
