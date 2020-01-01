@@ -17,7 +17,20 @@ public class LoginStepDefinitions {
 
     @Then("user verify that {string} page subtitle is displayed")
     public void user_verify_that_page_subtitle_is_displayed(String string) {
-        System.out.println("Verifying page subtitle is :"+string);
+        System.out.println("Verifying page subtitle is :" + string);
+
+    }
+
+    @Then("user logs in as a driver")
+    public void user_logs_in_as_a_driver() {
+        System.out.println("Login as driver");
+
+
+    }
+
+    @Then("user logs in as a sales manager")
+    public void user_logs_in_as_a_sales_manager() {
+        System.out.println("Login as sales manager");
 
     }
 
