@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class HandlingDynamicTable {
@@ -18,6 +19,14 @@ public class HandlingDynamicTable {
         driver.get("http://demo.guru99.com/test/web-table-element.php");
         List <WebElement> colms = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/thead/tr/th"));
         List <WebElement> rows = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/tbody/tr/td/a"));
+
+        Iterator <WebElement> rowIter = rows.iterator();
+        while (rowIter.hasNext()){
+            if(rowIter.next().equals("Kwality")){
+                rowIter.next().click();
+                break;
+            }
+        }
 
         System.out.println("=================");
         for (WebElement eachcol:colms){
