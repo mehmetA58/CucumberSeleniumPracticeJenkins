@@ -29,6 +29,8 @@ public class handilingDynamicTable {
         List <WebElement> totalCol = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/thead/tr/th"));
         int rowCount=totalRow.size();
         int colCount=totalCol.size();
+        System.out.println(rowCount);
+        System.out.println(colCount);
         for (int i=1; i<=rowCount;i++){
             String CompanyXpath=beforeXpath+i+afterXpath;
             WebElement companyName=driver.findElement(By.xpath(CompanyXpath));
