@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/test/resources/features/Activities",
-                     "src/test/resources/features/fleet"
+        features = {"src/test/resources/features/Activities"
+
 
         },
         glue = "com/vytrack/step_definitions",
@@ -19,5 +19,5 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"
         }
 )
-public class CucumberRunner {
+public class SmokeRunner {
 }
