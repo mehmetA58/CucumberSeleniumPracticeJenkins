@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.vytrack</groupId>
-    <artifactId>Summer2019OnlineCucumberSelenium</artifactId>
+    <artifactId>JenkinsUygulama</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
